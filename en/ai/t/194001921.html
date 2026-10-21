@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>E6021 COMPRESSOR ENGAGEMENT - FUNCTIONAL DESCRIPTION · Fiat Croma</title>
+<meta name="description" content="functional description (how the circuit works). engines: 1.9 JTD 8v, 1.9 JTD 16v, 2.4 JTD 20v; all production periods. Electrical equipment &gt; 1 ELECTRICAL FUNCTIONS &gt; E60 CLIMATE CONTROL SYSTEM &gt; E6021 COMPRESSOR ENGAGEMENT &gt; E6021 COMPRESSOR ENGAGEMENT - FUNCTIONAL DESCRIPTION">
+<link rel="stylesheet" href="../ai.css">
+</head>
+<body>
+<header><a href="../index.html">Fiat Croma workshop manual: text version</a> · <a href="../guide.html">guide</a></header>
+<main>
+<nav class="crumbs"><a href="194000014.html">Electrical equipment</a> › <a href="194000015.html">1 ELECTRICAL FUNCTIONS</a> › <a href="194001664.html">E60 CLIMATE CONTROL SYSTEM</a> › <a href="194004256.html">E6021 COMPRESSOR ENGAGEMENT</a> › <span>E6021 COMPRESSOR ENGAGEMENT - FUNCTIONAL DESCRIPTION</span></nav>
+<h1><span class="code">E6021</span> COMPRESSOR ENGAGEMENT - FUNCTIONAL DESCRIPTION</h1>
+<dl class="facts">
+<dt>Path</dt><dd>Electrical equipment &gt; 1 ELECTRICAL FUNCTIONS &gt; E60 CLIMATE CONTROL SYSTEM &gt; E6021 COMPRESSOR ENGAGEMENT &gt; E6021 COMPRESSOR ENGAGEMENT - FUNCTIONAL DESCRIPTION</dd>
+<dt>Kind</dt><dd>functional description (how the circuit works)</dd>
+<dt>Applies to</dt><dd>engines: 1.9 JTD 8v, 1.9 JTD 16v, 2.4 JTD 20v; all production periods</dd>
+<dt>Interactive page</dt><dd><a href="https://sloeber94.github.io/elrnDB-fCrm/en/#/194001921">https://sloeber94.github.io/elrnDB-fCrm/en/#/194001921</a></dd>
+</dl>
+
+<section class="block"><p class="applies">Applies to: engines: 1.9 JTD 8v, 1.9 JTD 16v, 2.4 JTD 20v; all production periods</p><p>The relay T5 for the engine compartment junction unit B001 controls the circuit for engaging the compressor L020.</p><p>The power supply for the relay arrives via the direct line for the battery protected by fuse F19 of the engine compartment junction unit.</p><p>The power supply for the coil for the compressor control relay T5 arrives directly from the main injection relay T9. In this case too it is a direct battery supply.</p><p><a href="194001629.html">See E5050 DIESEL ENGINES ELECTRONIC MANAGEMENT</a></p><p>For versions with manual air conditioning, the climate control system control unit M070 sends the enablement signal for the compressor from pin 16; on versions with an automatic climate control system this signal is sent from pin 7 of connector A.</p><p>The engine management control unit M010 receives the engagement request signal at pin 54 of connector A.</p><p>On the basis of its internal control logic the control unit M010 sends the command - from pin 29 of connector A - for the effective engagement of the compressor which, by means of an earth signal, energizes the relay T5: in this way the air conditioning compressor engagement solenoid L020 is operated at a voltage of 12V.</p><p>On versions with automatic climate control, if the compressor is actually activated, this signal is sent via the CAN from the engine management control unit M010 - pins 83 and 84 of connector A - to the climate control system control unit M070 - pin 1 and 10 of connector A - for the climate control system management and display logics.</p><p>The Body Computer M001 manages the gateway for communication between the C-CAN and B-CAN.</p><p><a href="194001269.html">See E1050 CAN CONNECTION LINES</a></p><p>If the linear sensor for the fans K120 signals to the control unit M10 - pin 13 of connector A - that the pressure value of the refrigerant fluid is too high or too low, then the control unit M010 excludes the engagement of the compressor.</p></section>
+<h2>Topics linked from this page (2)</h2><ul><li><a href="194001269.html">E1050 CAN CONNECTION LINES</a> <span class="meta">chapter (index of subtopics) · engines: 2.2, 1.9 JTD 8v, 1.9 JTD 16v; all production periods</span></li><li><a href="194001629.html">E5050 DIESEL ENGINES ELECTRONIC MANAGEMENT</a> <span class="meta">chapter (index of subtopics) · engines: 1.9 JTD 8v; all production periods; only with equipment: VERSION WITH DPF</span></li></ul>
+
+</main>
+<footer>Interactive version: <a href="https://sloeber94.github.io/elrnDB-fCrm/en/">https://sloeber94.github.io/elrnDB-fCrm/en/</a> · <a href="../llms.txt">llms.txt</a></footer>
+</body>
+</html>

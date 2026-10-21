@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>E2012 HIGH BEAMS - FUNCTIONAL DESCRIPTION · Fiat Croma</title>
+<meta name="description" content="functional description (how the circuit works). all engines; all production periods; only with equipment: XENON GAS HEADLAMPS. Electrical equipment &gt; 1 ELECTRICAL FUNCTIONS &gt; E20 EXTERIOR LIGHTING &gt; E2012 MAIN BEAM HEADLAMPS &gt; E2012 HIGH BEAMS - FUNCTIONAL DESCRIPTION">
+<link rel="stylesheet" href="../ai.css">
+</head>
+<body>
+<header><a href="../index.html">Fiat Croma workshop manual: text version</a> · <a href="../guide.html">guide</a></header>
+<main>
+<nav class="crumbs"><a href="194000014.html">Electrical equipment</a> › <a href="194000015.html">1 ELECTRICAL FUNCTIONS</a> › <a href="194000016.html">E20 EXTERIOR LIGHTING</a> › <a href="194004097.html">E2012 MAIN BEAM HEADLAMPS</a> › <span>E2012 HIGH BEAMS - FUNCTIONAL DESCRIPTION</span></nav>
+<h1><span class="code">E2012</span> HIGH BEAMS - FUNCTIONAL DESCRIPTION</h1>
+<dl class="facts">
+<dt>Path</dt><dd>Electrical equipment &gt; 1 ELECTRICAL FUNCTIONS &gt; E20 EXTERIOR LIGHTING &gt; E2012 MAIN BEAM HEADLAMPS &gt; E2012 HIGH BEAMS - FUNCTIONAL DESCRIPTION</dd>
+<dt>Kind</dt><dd>functional description (how the circuit works)</dd>
+<dt>Applies to</dt><dd>all engines; all production periods; only with equipment: XENON GAS HEADLAMPS</dd>
+<dt>Interactive page</dt><dd><a href="https://sloeber94.github.io/elrnDB-fCrm/en/#/194001311">https://sloeber94.github.io/elrnDB-fCrm/en/#/194001311</a></dd>
+</dl>
+
+<section class="block"><p class="applies">Applies to: all engines; all production periods; only with equipment: XENON GAS HEADLAMPS</p><p>talk unit H005 sends two earth signals, depending on left stalk selection mode, to the Body Computer M001:</p><p>- from pin 4 of connector B it sends pin 33 of connector G of the Body Computer a light flasher activation signal (1st unstable position);</p><p>- from pin 3 of connector B it sends pin 4 of connector I of the Body Computer a high beam activation signal (2nd unstable position);</p><p>Body Computer M001 (pin 9 of connector A) controls the power supply to the supplementary high beams and internal headlamp electronics (xenon bulb low/high switching motor) by sending an earth signal to engine compartment junction unit B001 (pin 12 of connector A) that excites relay T2: this supplies the high beams of headlams F010 (left) and F011 (right). Each of the two lines is protected by a fuse in control unit B001:</p><p>- F15 for the left headlamp, from pin 25 connector A;</p><p>- F14 for the right headlamp, from pin 22 connector A.</p><p>The signals are sent to the supplementary halogen bulb and the electronics inside each of the two headlamps that controls the activation of the bulb and the low/high switching motor.</p><p>Both electronic systems inside the headlamps are supplied - pin 9 - from the INT line of underfacia control unit B002 protected by F37.</p><p>Pins 12 of both electronic systems are interconnected (master/slave connection) while pin 10 of left headlamp interior logic (F010) receives a speedometer signal supplied by Body Computer M001 (pin 28 of connector D).</p><p>Via the CAN line, Body Computer M001 (pin 5 and 6 of connector I) connects to instrument panel E050 (pins 3 and 4 of connector A), to control the high beam warning light.</p><p>The headlamps offer a self-diagnostic function from pins 11.</p></section>
+
+
+</main>
+<footer>Interactive version: <a href="https://sloeber94.github.io/elrnDB-fCrm/en/">https://sloeber94.github.io/elrnDB-fCrm/en/</a> · <a href="../llms.txt">llms.txt</a></footer>
+</body>
+</html>

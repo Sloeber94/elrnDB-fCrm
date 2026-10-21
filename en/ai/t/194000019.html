@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>E2010 SIDE LIGHTS/NUMBER PLATE LIGHT - OPERATIONAL DESCRIPTION · Fiat Croma</title>
+<meta name="description" content="functional description (how the circuit works). all engines; all production periods. Electrical equipment &gt; 1 ELECTRICAL FUNCTIONS &gt; E20 EXTERIOR LIGHTING &gt; E2010 SIDE LIGHTS / NO. PLATE LIGHTS &gt; E2010 SIDE LIGHTS/NUMBER PLATE LIGHT - OPERATIONAL DESCRIPTION">
+<link rel="stylesheet" href="../ai.css">
+</head>
+<body>
+<header><a href="../index.html">Fiat Croma workshop manual: text version</a> · <a href="../guide.html">guide</a></header>
+<main>
+<nav class="crumbs"><a href="194000014.html">Electrical equipment</a> › <a href="194000015.html">1 ELECTRICAL FUNCTIONS</a> › <a href="194000016.html">E20 EXTERIOR LIGHTING</a> › <a href="194000017.html">E2010 SIDE LIGHTS / NO. PLATE LIGHTS</a> › <span>E2010 SIDE LIGHTS/NUMBER PLATE LIGHT - OPERATIONAL DESCRIPTION</span></nav>
+<h1><span class="code">E2010</span> SIDE LIGHTS/NUMBER PLATE LIGHT - OPERATIONAL DESCRIPTION</h1>
+<dl class="facts">
+<dt>Path</dt><dd>Electrical equipment &gt; 1 ELECTRICAL FUNCTIONS &gt; E20 EXTERIOR LIGHTING &gt; E2010 SIDE LIGHTS / NO. PLATE LIGHTS &gt; E2010 SIDE LIGHTS/NUMBER PLATE LIGHT - OPERATIONAL DESCRIPTION</dd>
+<dt>Kind</dt><dd>functional description (how the circuit works)</dd>
+<dt>Applies to</dt><dd>all engines; all production periods</dd>
+<dt>Interactive page</dt><dd><a href="https://sloeber94.github.io/elrnDB-fCrm/en/#/194000019">https://sloeber94.github.io/elrnDB-fCrm/en/#/194000019</a></dd>
+</dl>
+
+<section class="block"><p class="applies">Applies to: all engines; all production periods</p><p>Stalk unit H005 sends two earth signals, depending on left stalk wheel position, to the Body Computer M001:</p><p>- from pin 7 of connector C it sends a manual side light and low beam activation signal to pin 28 of connector G of the Body Computer.</p><p>- from pin 8 of connector C it sends an AUTO mode side light and low beam activation signal to pin 2 of connector G of the Body Computer (automatic dusk sensor activation).</p><p>Both signals are clearly incompatible with one another. If both signals are present, the lights are permanently off.</p><p>Body Computer M001 controls activation of the side lights respectively:</p><p>- from pin 40 connector B, for left headlamp F010;</p><p>- from pin 30 connector B, for right headlamp F011;</p><p>- from pin 5 connector D, for left tail-lightF030;</p><p>- from pin 6 connector D, for right tail-lightF031;</p><p>- from pin 9 connector D, for number plate lights F050 (left) and F051 (right).</p><p>The side lights are activated in AUTO mode by the dusk sensor integral with the electrochrome interior mirror unit P065 (signal via the A-BUS serial line to pin 7 of connector D of M001).</p><p><a href="194001284.html">See E1060 A-BUS SERIAL LINE</a></p><p>The dusk sensor is supplied from the INT line protected by fuse F49 of underfacia junction unit B002.</p><p>The side lights and number plate lights are also activated via the parking light button (PARK) in the left control panel H091, which sends an earth signal (pin 10 connector B) to pin 17 of connector H of M001.</p><p>The Follow me home function is activated by a low beam flasher earth signal sent from stalk unit H005 (pin 4 connector B) to Body Computer M001 (pin 33 connector G).</p><p>Via the CAN line, the Body Computer is connected to instrument panel E050 to manage the side lights on warning light and, if faults are detected in the circuit or in the bulbs, the exterior light fault warning light or, in the event of a fault in the dusk sensor, the general fault warning light, in addition to all the messages available on the display.</p></section>
+<h2>Topics linked from this page (1)</h2><ul><li><a href="194001284.html">E1060 A-BUS SERIAL LINE</a> <span class="meta">chapter (index of subtopics) · all engines; all production periods</span></li></ul>
+
+</main>
+<footer>Interactive version: <a href="https://sloeber94.github.io/elrnDB-fCrm/en/">https://sloeber94.github.io/elrnDB-fCrm/en/</a> · <a href="../llms.txt">llms.txt</a></footer>
+</body>
+</html>

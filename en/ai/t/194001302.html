@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>E2011 DIPPED HEADLIGHTS - FUNCTIONAL DESCRIPTION · Fiat Croma</title>
+<meta name="description" content="functional description (how the circuit works). all engines; all production periods; only with equipment: XENON GAS HEADLAMPS. Electrical equipment &gt; 1 ELECTRICAL FUNCTIONS &gt; E20 EXTERIOR LIGHTING &gt; E2011 DIPPED HEADLAMPS &gt; E2011 DIPPED HEADLIGHTS - FUNCTIONAL DESCRIPTION">
+<link rel="stylesheet" href="../ai.css">
+</head>
+<body>
+<header><a href="../index.html">Fiat Croma workshop manual: text version</a> · <a href="../guide.html">guide</a></header>
+<main>
+<nav class="crumbs"><a href="194000014.html">Electrical equipment</a> › <a href="194000015.html">1 ELECTRICAL FUNCTIONS</a> › <a href="194000016.html">E20 EXTERIOR LIGHTING</a> › <a href="194004094.html">E2011 DIPPED HEADLAMPS</a> › <span>E2011 DIPPED HEADLIGHTS - FUNCTIONAL DESCRIPTION</span></nav>
+<h1><span class="code">E2011</span> DIPPED HEADLIGHTS - FUNCTIONAL DESCRIPTION</h1>
+<dl class="facts">
+<dt>Path</dt><dd>Electrical equipment &gt; 1 ELECTRICAL FUNCTIONS &gt; E20 EXTERIOR LIGHTING &gt; E2011 DIPPED HEADLAMPS &gt; E2011 DIPPED HEADLIGHTS - FUNCTIONAL DESCRIPTION</dd>
+<dt>Kind</dt><dd>functional description (how the circuit works)</dd>
+<dt>Applies to</dt><dd>all engines; all production periods; only with equipment: XENON GAS HEADLAMPS</dd>
+<dt>Interactive page</dt><dd><a href="https://sloeber94.github.io/elrnDB-fCrm/en/#/194001302">https://sloeber94.github.io/elrnDB-fCrm/en/#/194001302</a></dd>
+</dl>
+
+<section class="block"><p class="applies">Applies to: all engines; all production periods; only with equipment: XENON GAS HEADLAMPS</p><p>talk unit H005 sends two earth signals, depending on left stalk wheel position, to the Body Computer M001:</p><p>rom pin 7 of connector C it sends a manual side light and low beam activation signal to pin 28 of connector G of the Body Computer.</p><p>- from pin 8 of connector C it sends an AUTO mode side light and low beam activation signal to pin 2 of connector G of the Body Computer (automatic dusk sensor activation).</p><p>Both signals are clearly incompatible with one another. If both signals are present, the lights are permanently off.</p><p>The side lights are activated in AUTO mode by the dusk sensor integral with the electrochrome interior mirror unit P065 (signal via the A-BUS serial line to pin 7 of connector D of M001).</p><p><a href="194001284.html">See E1060 A-BUS SERIAL LINE</a></p><p>The enablement signal emitted when the key is turned ON in the ignition (INT) reaches the underfacia junction unit B002 at pin 11 of connector H. It then passes to Body Computer M001 (pin 9 of connector F).</p><p>e dusk sensor P065) is supplied from the INT line protected by fuse F49 of underfacia junction unit B002.</p><p>Body Computer M001 (pin 8 of connector F) controls the power supply to the dipped beams by sending an earth signal to underfacia junction unit B002 that excites relay T1: this supplies the high beams of headlams F010 (left) and F011 (right). Each of the two lines is protected by a fuse in control unit B002:</p><p>- F13 for the left headlamp, from pin 3 connector A;</p><p>- F12 for the right headlamp, from pin 12 connector A.</p><p>The signals are sent to the electronics inside each of the two headlamps that controls the activation of the bulb and the low/high switching motor.</p><p>Both electronic systems inside the headlamps are supplied - pin 9 - from the INT line of underfacia control unit B002 protected by F37.</p><p>Pins 12 of both electronic systems are interconnected (master/slave connection) while pin 10 of left headlamp interior logic (F010) receives a speedometer signal supplied by Body Computer M001 (pin 28 of connector D).</p><p>The Follow me home function is activated by a low beam flasher earth signal sent from stalk unit H005 (pin 4 connector B) to Body Computer M001 (pin 33 connector G).</p><p>The headlamps offer a self-diagnostic function from pins 11.</p><p><a href="194001782.html">See E8010 DIAGNOSTIC MULTIPLE CONNECTOR</a></p></section>
+<h2>Topics linked from this page (2)</h2><ul><li><a href="194001284.html">E1060 A-BUS SERIAL LINE</a> <span class="meta">chapter (index of subtopics) · all engines; all production periods</span></li><li><a href="194001782.html">E8010 DIAGNOSTIC MULTIPLE CONNECTOR</a> <span class="meta">chapter (index of subtopics) · engines: 2.2; all production periods</span></li></ul>
+
+</main>
+<footer>Interactive version: <a href="https://sloeber94.github.io/elrnDB-fCrm/en/">https://sloeber94.github.io/elrnDB-fCrm/en/</a> · <a href="../llms.txt">llms.txt</a></footer>
+</body>
+</html>

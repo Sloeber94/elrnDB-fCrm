@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>E5010 STARTING AND RECHARGING - FUNCTIONAL DESCRIPTION · Fiat Croma</title>
+<meta name="description" content="functional description (how the circuit works). engines: 1.9 JTD 16v; all production periods; only with equipment: AUTOMATIC TRANSMISSION. Electrical equipment &gt; 1 ELECTRICAL FUNCTIONS &gt; E50 ENGINE CONTROL AND MANAGEMENT SYSTEMS &gt; E5010 STARTING AND RECHARING &gt; E5010 STARTING AND RECHARGING - FUNCTIONAL DESCRIPTION">
+<link rel="stylesheet" href="../ai.css">
+</head>
+<body>
+<header><a href="../index.html">Fiat Croma workshop manual: text version</a> · <a href="../guide.html">guide</a></header>
+<main>
+<nav class="crumbs"><a href="194000014.html">Electrical equipment</a> › <a href="194000015.html">1 ELECTRICAL FUNCTIONS</a> › <a href="194001573.html">E50 ENGINE CONTROL AND MANAGEMENT SYSTEMS</a> › <a href="194004176.html">E5010 STARTING AND RECHARING</a> › <span>E5010 STARTING AND RECHARGING - FUNCTIONAL DESCRIPTION</span></nav>
+<h1><span class="code">E5010</span> STARTING AND RECHARGING - FUNCTIONAL DESCRIPTION</h1>
+<dl class="facts">
+<dt>Path</dt><dd>Electrical equipment &gt; 1 ELECTRICAL FUNCTIONS &gt; E50 ENGINE CONTROL AND MANAGEMENT SYSTEMS &gt; E5010 STARTING AND RECHARING &gt; E5010 STARTING AND RECHARGING - FUNCTIONAL DESCRIPTION</dd>
+<dt>Kind</dt><dd>functional description (how the circuit works)</dd>
+<dt>Applies to</dt><dd>engines: 1.9 JTD 16v; all production periods; only with equipment: AUTOMATIC TRANSMISSION</dd>
+<dt>Interactive page</dt><dd><a href="https://sloeber94.github.io/elrnDB-fCrm/en/#/194001591">https://sloeber94.github.io/elrnDB-fCrm/en/#/194001591</a></dd>
+</dl>
+
+<section class="block"><p class="applies">Applies to: engines: 1.9 JTD 16v; all production periods; only with equipment: AUTOMATIC TRANSMISSION</p><p>The ignition device H003 receives a supply from the direct battery line protected by fuse F32 of the junction unit under the dashboard B002.</p><p>The steering lock control unit M089 provides a power supply from the direct battery line protected by fuse F3 of the engine compartment junction unit B001 - pin C1 and, depending on the rotation of the key in the ignition device H003, receives the following signals:</p><p>- at pin A6, the key inserted signal (TEG_IN);</p><p>- at pin B5, the key turned to ON signal (TEG_MAR);</p><p>- at pin C5, the first starting signal with the key turned to START (TEG_Crank1);</p><p>- at pin C6, the second starting signal with the key turned to START (TEG_Crank2);</p><p>The ignition device H003 - pins 1 and 2 - communicates, via the CAN, with the Body Computer M001 - pins 24 and 25 of connector H - whether or not the TEG inserted in the reader is recognized.</p><p>In the same way, control unit M089 - pins A2 and A3 of M089, with the ignition ON, notify the Body Computer of the request to send the system the +15. Once the TEG is recognized (immobilizer function) and allows the distribution of the power lines (INT, INT/A, 15/54) the steering lock control unit M089 is enabled for the starting stage.</p><p>The signal for the correct position of the gear lever (PARK) is sent by the automatic transmission control unti M055 (pin 5 of connector A) to pin B4 of the steering lock control unit M089.</p><p><a href="194001751.html">See E7050 AUTOMATIC TRANSMISSION</a></p><p><a href="194001766.html">See E7065 ELECTRIC STEERING LOCK</a></p><p>The steering lock control unit M089 receives the positive signals, at pins C7 and C4, relating to the pressure at the brake pedal I030 (from the NC and NA brake contacts respectively). Turning the key at the same time to START, from pin B8, the steering lock control unit M089 sends the +50 signal to the starter motor A020 solenoid winding (pin 50, connector C).</p><p>Pin 30 (connector A) of A020, the actual motor, receives a power supply with the voltage coming from the battery A001.</p><p>The direct current produced by the alternator A010 (pin B+, connector B) is sent to the battery A001, passing through the starter motor A020 (pin 30, connector B).</p><p>When the alternator A010 is not turning and therefore not recharging the battery, an earth signal is sent from pin D+ (connector A) to the Body Computer M001- pin 19 of connector A: the latter, connected via the CAN to the instrument panel E050, determines the switching on of the alternator failure warning light in the instrument panel.</p></section>
+<h2>Topics linked from this page (2)</h2><ul><li><a href="194001751.html">E7050 AUTOMATIC TRANSMISSION</a> <span class="meta">chapter (index of subtopics) · engines: 2.2; all production periods</span></li><li><a href="194001766.html">E7065 ELECTRIC STEERING LOCK</a> <span class="meta">chapter (index of subtopics) · engines: 1.8, 2.2, 1.9 JTD 8v, 1.9 JTD 16v; all production periods</span></li></ul>
+
+</main>
+<footer>Interactive version: <a href="https://sloeber94.github.io/elrnDB-fCrm/en/">https://sloeber94.github.io/elrnDB-fCrm/en/</a> · <a href="../llms.txt">llms.txt</a></footer>
+</body>
+</html>
